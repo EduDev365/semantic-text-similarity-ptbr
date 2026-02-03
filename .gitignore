@@ -1,0 +1,48 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+
+# =====================
+# Virtual Environments
+# =====================
+.venv/
+venv/
+env/
+.venv_test/
+backend/.venv/
+
+# =====================
+# Streamlit
+# =====================
+.streamlit/
+
+# =====================
+# Jupyter / Experiments
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# System Files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Environment Variables
+# =====================
+.env
+.env.*
+
+# =====================
+# Logs
+# =====================
+*.log
+
+# =====================
+# Build
+# =====================
+build/
+dist/
+*.egg-info/

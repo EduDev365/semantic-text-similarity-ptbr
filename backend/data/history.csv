@@ -1,0 +1,2 @@
+timestamp,model_label,model_name,text_a,text_b,similarity,percent,classificacao
+2026-02-02 11:11:25,Multilingual (final),paraphrase-multilingual-MiniLM-L12-v2,O aluno estudou muito para a prova final.,O estudante se dedicou bastante para o exame final.,0.918302,91.83,alta

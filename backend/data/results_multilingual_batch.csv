@@ -1,0 +1,26 @@
+id,categoria,texto_a,texto_b,similaridade_percent
+1,PARAFRASE_FORTE,O gato dorme no sofá.,O felino está dormindo no sofá.,98.88
+2,PARAFRASE_FORTE,A reunião foi cancelada por falta de participantes.,O encontro foi cancelado porque ninguém apareceu.,85.72
+3,PARAFRASE_FORTE,Preciso enviar o relatório até amanhã.,Tenho que mandar o relatório até o dia seguinte.,91.65
+4,PARAFRASE_FORTE,O sistema apresentou falhas após a atualização.,"Depois do update, o sistema começou a falhar.",92.61
+5,PARAFRASE_FORTE,Ela comprou um carro novo na semana passada.,"Na semana passada, ela adquiriu um automóvel novo.",95.22
+6,PARAFRASE_MEDIA,O aluno estudou bastante para a prova.,O estudante se preparou muito para o exame.,82.2
+7,PARAFRASE_MEDIA,O aplicativo ficou lento depois da última versão.,"Após a última versão, o app passou a ter desempenho ruim.",84.52
+8,PARAFRASE_MEDIA,A empresa reduziu custos para aumentar o lucro.,"Para lucrar mais, a organização diminuiu despesas.",81.92
+9,PARAFRASE_MEDIA,O servidor caiu durante o pico de acesso.,"Em horário de maior tráfego, o servidor ficou fora do ar.",63.44
+10,PARAFRASE_MEDIA,O cliente solicitou mudanças no requisito.,O usuário pediu alterações na especificação.,73.91
+11,MESMO_TEMA,Embeddings representam textos como vetores numéricos.,Modelos de linguagem podem transformar frases em vetores.,46.67
+12,MESMO_TEMA,Cosine similarity mede o ângulo entre dois vetores.,A similaridade do cosseno compara vetores pelo ângulo.,86.78
+13,MESMO_TEMA,Transformers melhoraram tarefas de NLP nos últimos anos.,Arquiteturas baseadas em atenção revolucionaram o processamento de linguagem.,27.76
+14,MESMO_TEMA,Testes automatizados ajudam a evitar regressões.,Escrever testes permite detectar erros após mudanças no código.,56.45
+15,MESMO_TEMA,Requisitos bem definidos reduzem retrabalho.,Uma boa especificação de requisitos diminui mudanças futuras.,79.28
+16,DIFERENTES,Redes neurais são usadas para reconhecimento de padrões.,O time ganhou o campeonato depois dos pênaltis.,6.24
+17,DIFERENTES,A análise de requisitos é essencial em projetos de software.,"A receita leva farinha, ovos e leite.",7.79
+18,DIFERENTES,O banco de dados relacional usa tabelas e chaves.,A praia estava cheia no feriado.,-1.08
+19,DIFERENTES,O algoritmo de busca encontra caminhos em grafos.,Comprei uma bicicleta para passear no parque.,6.76
+20,DIFERENTES,A biblioteca pandas facilita análise de dados.,Meu cachorro gosta de correr atrás da bola.,3.24
+21,CONTRADITORIOS,O projeto foi concluído antes do prazo.,O projeto atrasou e não foi entregue no prazo.,64.68
+22,CONTRADITORIOS,O sistema está funcionando corretamente.,O sistema está com problemas e falhando.,34.07
+23,CONTRADITORIOS,A internet está rápida hoje.,A internet está muito lenta hoje.,50.73
+24,CONTRADITORIOS,O usuário aprovou a interface.,O usuário rejeitou a interface.,56.24
+25,CONTRADITORIOS,A aplicação ficou mais rápida após otimização.,A aplicação ficou mais lenta após a otimização.,59.53

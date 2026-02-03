@@ -1,0 +1,7 @@
+timestamp,text_a,text_b,similarity,percent
+2026-02-02 07:33:35,O gato subiu no telhado,O felino subiu no telhado,0.826018,82.60
+2026-02-02 07:34:13,O aluno entregou o trabalho no prazo,O estudante enviou a tarefa no prazo,0.659743,65.97
+2026-02-02 07:34:43,Hoje vai chover forte na cidade,A previsão indica chuva intensa,0.394709,39.47
+2026-02-02 07:37:17,Engenharia de software envolve requisitos e testes,Receita de bolo leva farinha e ovos,0.201387,20.14
+2026-02-02 07:37:47,O carro elétrico carrega rapidamente,Veículos elétricos podem ser carregados rápido,0.808170,80.82
+2026-02-02 07:39:11,Redes neurais usam camadas e parâmetros,Futebol é jogado em campo com bola,0.391550,39.15
