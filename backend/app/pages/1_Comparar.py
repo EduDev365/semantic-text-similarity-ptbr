@@ -45,21 +45,22 @@ model_label = MODEL_LABEL
 model = _cached_model(model_label)
 
 colA, colB = st.columns(2)
+
 with colA:
     text_a = st.text_area(
-    "Texto A",
-    height=220,
-    value=st.session_state.get("example_a", ""),
-    placeholder="Cole ou digite o Texto A..."
-)
+        "Texto A",
+        height=220,
+        value=st.session_state.get("example_a", ""),
+        placeholder="Cole ou digite o Texto A...",
+    )
 
 with colB:
     text_b = st.text_area(
-    "Texto B",
-    height=220,
-    value=st.session_state.get("example_b", ""),
-    placeholder="Cole ou digite o Texto B..."
-)
+        "Texto B",
+        height=220,
+        value=st.session_state.get("example_b", ""),
+        placeholder="Cole ou digite o Texto B...",
+    )
 
 btn = st.button("Comparar", type="primary", use_container_width=True)
 
@@ -71,6 +72,15 @@ if btn:
         st.error("Preencha os dois textos.")
         st.stop()
 
+    # Aviso para entradas muito curtas (embeddings podem ficar instáveis)
+    # Regra prática: se ambos tiverem menos de 2 palavras OU forem muito curtinhos
+    if (len(a.split()) < 2 and len(b.split()) < 2) or (len(a) < 3 or len(b) < 3):
+        st.warning(
+            "⚠️ **Entradas muito curtas** (ex.: 1 palavra ou poucas letras) podem gerar "
+            "similaridades artificiais. Para resultados mais confiáveis, use frases ou "
+            "pequenos parágrafos."
+        )
+
     with st.spinner("Calculando similaridade..."):
         score = cosine_similarity(model, a, b)
 
@@ -80,7 +90,7 @@ if btn:
     st.success("Comparação concluída!")
 
     c1, c2, c3 = st.columns(3)
-    c1.metric("Similaridade (0–1)", f"{score:.4f}")
+    c1.metric("Similaridade (−1 a 1)", f"{score:.4f}")
     c2.metric("Percentual", f"{percent:.2f}%")
     c3.metric("Classificação", nivel)
 

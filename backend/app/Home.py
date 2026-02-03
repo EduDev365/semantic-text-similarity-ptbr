@@ -120,5 +120,7 @@ st.markdown(
 
 st.caption(
     "💡 Dica: paráfrases tendem a gerar valores altos, textos sem relação valores baixos "
-    "e frases contraditórias valores intermediários, pois compartilham o mesmo contexto semântico."
+    "e frases contraditórias valores intermediários. "
+    "Como a similaridade é baseada em cosseno (-1 a 1), os resultados podem ser negativos "
+    "e são convertidos para a escala de -100 a 100."
 )
