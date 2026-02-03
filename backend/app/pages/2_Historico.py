@@ -16,7 +16,7 @@ if "percent" in df.columns:
 
 with st.sidebar:
     st.subheader("Filtros")
-    min_percent = st.slider("Percentual mínimo", -100, 100, 0)
+    min_percent = st.slider("Percentual mínimo", -100, 100, -100)
 
     # Slider baseado no tamanho real do histórico
     total = len(df)
