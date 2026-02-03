@@ -1,12 +1,16 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from core import get_paths, load_model, cosine_similarity, classify, MODELS
 
 st.set_page_config(page_title="Comparar", page_icon="🧪", layout="wide")
 
 paths = get_paths()  # mantém (útil pro app)
+
+# Fuso BR (resolve diferença entre servidor e Brasil)
+BR_TZ = ZoneInfo("America/Sao_Paulo")
 
 # Modelo fixo (produto final)
 MODEL_LABEL = "Multilingual (final)"
@@ -96,9 +100,12 @@ if btn:
 
     st.caption(f"Modelo usado: {model_label} ({MODELS[model_label]})")
 
+    # Timestamp no fuso do Brasil (resolve Streamlit Cloud)
+    ts_br = datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M:%S %z")
+
     # Salvar no histórico da sessão
     new_row = {
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "timestamp": ts_br,
         "model_label": model_label,
         "model_name": MODELS[model_label],
         "text_a": a,
