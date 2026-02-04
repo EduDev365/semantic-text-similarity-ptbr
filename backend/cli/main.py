@@ -40,7 +40,7 @@ def save_result(text_a: str, text_b: str, score: float, path: str = RESULTS_PATH
         writer.writerow(row)
 
 def classify(score: float) -> str:
-    # Faixas pro TCC
+    # Faixas similaridade
     if score >= 0.80:
         return "alta"
     if score >= 0.60:

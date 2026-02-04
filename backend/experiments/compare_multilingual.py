@@ -5,7 +5,7 @@ logging.set_verbosity_error()
 from sentence_transformers import SentenceTransformer, util
 
 
-# Modelo otimizado para múltiplos idiomas, melhor para o PT-BR
+# Modelo melhor para o PT-BR
 model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
 def similarity(text_a: str, text_b: str) -> float:
