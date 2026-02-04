@@ -1,3 +1,9 @@
+## 🚀 Live Demo (Streamlit)
+
+Test the application online:
+
+🔗 **https://semantic-text-similarity-ptbr-2.streamlit.app/**
+
 # Semantic Text Similarity (PT-BR)
 
 A lightweight NLP system for measuring semantic similarity between Portuguese texts using sentence embeddings and cosine similarity.  
